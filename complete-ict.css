@@ -1,0 +1,348 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+    background-color: #f8fbff;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #0f4c81;
+    padding: 16px 30px;
+
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar .logo {
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar .nav-links a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+    background:
+        linear-gradient(
+            rgba(203, 10, 228, 0.85),
+            rgba(235, 202, 17, 0.85)
+        ),
+        url("./bodyimages/Gemini_Generated_Image_ylw932ylw932ylw9\ -\ Copy.jpeg");
+
+    background-size: cover;
+    background-position: center;
+
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    opacity: 0.95;
+}
+
+
+/* =========================
+   GENERAL SECTIONS
+========================= */
+
+section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    scroll-margin-top: 80px;
+}
+
+section h2 {
+    color: #0f4c81;
+    margin-bottom: 16px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+section > p {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+/* =========================
+   COURSE CARDS
+========================= */
+
+.card-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.card {
+    background: #fff;
+    border: 2px solid #1b6fb5;
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    flex: 1 1 300px;
+    max-width: 340px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Course Image */
+
+.card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* Course Content */
+
+.card-content {
+    padding: 20px;
+}
+
+.card h3 {
+    color: #0f4c81;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+.card p {
+    margin-bottom: 15px;
+}
+
+
+/* Price */
+
+.price {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #0f4c81;
+    margin: 15px 0;
+}
+
+
+/* Enroll Button */
+
+.enroll-btn {
+    display: inline-block;
+
+    background-color: #0f4c81;
+    color: #fff;
+
+    padding: 10px 20px;
+
+    border-radius: 6px;
+
+    text-decoration: none;
+
+    font-weight: 600;
+}
+
+.enroll-btn:hover {
+    background-color: #1b6fb5;
+}
+
+
+/* =========================
+   ABOUT SECTION
+========================= */
+
+#about {
+    background-color: #eef6ff;
+    max-width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#about p {
+    max-width: 850px;
+    margin: 0 auto 16px;
+    text-align: center;
+}
+
+
+/* =========================
+   CONTACT FORM
+========================= */
+
+form {
+    max-width: 700px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+form p {
+    margin-bottom: 16px;
+}
+
+label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 6px;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+
+    border: 1px solid #ccc;
+    border-radius: 6px;
+
+    font-family: inherit;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: #1b6fb5;
+}
+
+
+/* Submit Button */
+
+button[type="submit"] {
+    background: #0f4c81;
+    color: #fff;
+
+    border: none;
+
+    padding: 12px 28px;
+
+    border-radius: 6px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background: #1b6fb5;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #0f4c81;
+    color: #fff;
+
+    text-align: center;
+
+    padding: 25px;
+}
+
+footer a {
+    color: #fff;
+}
+
+
+/* =========================
+   MOBILE RESPONSIVENESS
+========================= */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .navbar .nav-links {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero {
+        padding: 70px 20px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    section {
+        padding: 45px 15px;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+
+}
